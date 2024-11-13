@@ -14,12 +14,16 @@ from pdm4ar.exercises.ex11.planner import SpaceshipPlanner
 from pdm4ar.exercises_def.ex11.goal import SpaceshipTarget, DockingTarget
 from pdm4ar.exercises_def.ex11.utils_params import PlanetParams, SatelliteParams
 
+print("Hello, World!")
+test_variable = 40
+
 
 @dataclass(frozen=True)
 class MyAgentParams:
     """
     You can for example define some agent parameters.
     """
+
     my_tol: float = 0.1
 
 
@@ -45,10 +49,10 @@ class SpaceshipAgent(Agent):
     sp: SpaceshipParameters
 
     def __init__(
-            self,
-            init_state: SpaceshipState,
-            satellites: dict[PlayerName, SatelliteParams],
-            planets: dict[PlayerName, PlanetParams],
+        self,
+        init_state: SpaceshipState,
+        satellites: dict[PlayerName, SatelliteParams],
+        planets: dict[PlayerName, PlanetParams],
     ):
         """
         Initializes the agent.
