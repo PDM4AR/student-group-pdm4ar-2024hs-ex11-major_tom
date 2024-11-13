@@ -15,7 +15,7 @@ from pdm4ar.exercises_def.ex11.goal import SpaceshipTarget, DockingTarget
 from pdm4ar.exercises_def.ex11.utils_params import PlanetParams, SatelliteParams
 
 print("Hello, World!")
-test_variable = 20
+test_variable = 30
 
 
 @dataclass(frozen=True)
